@@ -1,0 +1,84 @@
+body {
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 400px;
+  height: 250px;
+  border: 1px solid rgb(161, 144, 144);
+  border-radius: 6px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: #8e9eab; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eef2f3,
+    #8e9eab
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.item {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.item-btn {
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border-color: inherit;
+  border: none;
+  cursor: pointer;
+
+  margin-bottom: 10px;
+  transition: background 300ms linear;
+}
+
+.item-btn:hover,
+.item-btn:focus {
+  background-color: rgb(121, 119, 105, 0.4);
+}

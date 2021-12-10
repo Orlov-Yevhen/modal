@@ -6,27 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./images/icon.svg" />
   </head>
 
   <body>
     <div class="container">
       <h1 class="title">Select file(s) to upload</h1>
       <form action="" class="form">
-        <input
-          class="item"
-          type="file"
-          accept=".csv"
-          name="files[]"
-          multiple="true"
-          autocomplete="off"
-          required
-        />
-        <input class="item-btn" type="submit" value="Upload files" />
+        <div class="input__wrapper">
+          <input
+            name="file"
+            type="file"
+            id="input__file"
+            class="input input__file"
+            accept=".csv"
+            multiple="true"
+            autocomplete="off"
+            required
+          />
+          <label for="input__file" class="input__file-button">
+            <span class="input__file-icon-wrapper"
+              ><img
+                class="input__file-icon"
+                src="./images/download-outline.svg"
+                alt="Выбрать файл"
+                width="25"
+            /></span>
+            <span class="input__file-button-text">Выберите файл</span>
+          </label>
+        </div>
       </form>
 
       <form class="form" action="https://www.asvirid.name/shp_maker">
+        <input class="item-btn" type="submit" value="Upload files" />
         <input class="item-btn" type="submit" value="Get map!" />
       </form>
     </div>
   </body>
+  <span></span>
 </html>
